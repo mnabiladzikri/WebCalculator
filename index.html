@@ -11,6 +11,9 @@
             .button {
                 padding: 10px;
             }
+            .history {
+                width: 100%;
+            }
  }
     </style>
 
@@ -43,10 +46,27 @@
             <div class="button clear">CE</div>
             <div class="button">0</div>
             <div class="button equals double">=</div>
+            <div class="button operator">x</div>
         </div>
     </div>
 
+    <div class="history card">
+        <h2>Calculation History</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>First Number</th>
+                    <th>Operator</th>
+                    <th>Second Number</th>
+                    <th>Result</th>
+                </tr>
+            </thead>
+            <table id="historyList"></table>
+        </table>
+    </div>
+
     <!-- JS -->
+    <script src="assets/storage.js"></script>
     <script src="assets/kalkulator.js"></script>
 </body>
 </html>
